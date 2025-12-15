@@ -9,7 +9,7 @@ public class GrassPokemon extends Pokemon {
 	public GrassPokemon(String name, int level, float hp, float xp) {
 		super(name, level, hp, xp);
 		type = "Grass";
-		typeIcon = "\uD83D\uDD25";
+		typeIcon = "\uD83C\uDF3F";
 		strongAgainst = "Water";
 		weakAgainst = "Fire";
 	}
@@ -46,13 +46,13 @@ public class GrassPokemon extends Pokemon {
 		this.weakAgainst = weakAgainst;
 	}
 
-	public void makeFire() {
-		System.out.println("Something is burning...");
-		System.out.println(this.getName() + " made fire!");
+	public void doGrow() {
+		System.out.println("Something is emits an earthy grounded aura...");
+		System.out.println(this.getName() + " did grow");
 	}
 
-	public void lightCigar() {
-		System.out.println(this.getName() + "lit a cigar!");
+	public void makeShade() {
+		System.out.println(this.getName() + " obstructed sunshine with a big leaf!");
 	}
 
 	@Override

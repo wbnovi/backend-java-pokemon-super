@@ -9,7 +9,7 @@ public class WaterPokemon extends Pokemon {
 	public WaterPokemon(String name, int level, float hp, float xp) {
 		super(name, level, hp, xp);
 		type = "Water";
-		typeIcon = "\uD83D\uDD25";
+		typeIcon = "\uD83C\uDF0A";
 		strongAgainst = "Fire";
 		weakAgainst = "Electric";
 	}
@@ -46,13 +46,13 @@ public class WaterPokemon extends Pokemon {
 		this.weakAgainst = weakAgainst;
 	}
 
-	public void makeFire() {
-		System.out.println("Something is burning...");
-		System.out.println(this.getName() + " made fire!");
+	public void makeRain() {
+		System.out.println("Looks like it’s going to rain...");
+		System.out.println(this.getName() + " made water fall out of the sky!");
 	}
 
-	public void lightCigar() {
-		System.out.println(this.getName() + "lit a cigar!");
+	public void waterPlant() {
+		System.out.println(this.getName() + " watered a plant.");
 	}
 
 	@Override
