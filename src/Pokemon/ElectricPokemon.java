@@ -9,7 +9,7 @@ public class ElectricPokemon extends Pokemon {
 	public ElectricPokemon(String name, int level, float hp, float xp) {
 		super(name, level, hp, xp);
 		type = "Electric";
-		typeIcon = "\uD83D\uDD25";
+		typeIcon = "⚡";
 		strongAgainst = "Water";
 		weakAgainst = "Grass";
 	}
@@ -46,13 +46,13 @@ public class ElectricPokemon extends Pokemon {
 		this.weakAgainst = weakAgainst;
 	}
 
-	public void makeFire() {
-		System.out.println("Something is burning...");
-		System.out.println(this.getName() + " made fire!");
+	public void doDischarge() {
+		System.out.println("The sparks are flying...");
+		System.out.println(this.getName() + " discharged!");
 	}
 
-	public void lightCigar() {
-		System.out.println(this.getName() + "lit a cigar!");
+	public void doPower() {
+		System.out.println(this.getName() + " powered on some type of machine!");
 	}
 
 	@Override
